@@ -33,7 +33,7 @@ une seconde. Tu vas lui donner trois humeurs.
 </details>
 
 ## Étape 0 : L'état du fantôme
-<!-- ws: {type: exercise, id: a2-etat-patrol} -->
+<!-- ws: {type: exercise, id: a2-etat-patrol, points: 150} -->
 
 Une **machine à états finis** est dans un seul mode à la fois, et elle en change quand un événement arrive.
 
@@ -58,7 +58,7 @@ Pour vérifier, remplace `'patrol'` par `'follow'` et relance : le fantôme devi
 ![Il poursuit comme à la fin de la partie 1, et il est orange, désormais cette couleur veut dire quelque chose.](img/a2-e1-orange.gif)
 
 ## Étape 1 : Prendre peur et fuir
-<!-- ws: {type: exercise, id: a2-peur-fuite, validation: quiz} -->
+<!-- ws: {type: exercise, id: a2-peur-fuite, points: 550, validation: quiz} -->
 
 Les quatre grosses pac-gommes blanches, dans les coins, sont des **super pac-gommes**. Quand tu en manges une, `game.scaredTimer` passe à 8 et redescend seconde après seconde. Au-dessus de 0, le fantôme a peur.
 
@@ -135,7 +135,7 @@ Le fantôme ne bouge plus quand il a peur ? Il est peut-être acculé : toutes l
 - C. L'ordre d'exécution du code n'a pas d'importance
 
 ## Étape 2 : Errer au hasard
-<!-- ws: {type: exercise, id: a2-patrouiller} -->
+<!-- ws: {type: exercise, id: a2-patrouiller, points: 400} -->
 
 En `'patrol'`, le fantôme ne te cherche pas. À chaque case, il regarde les directions libres et en tire une au hasard.
 
@@ -196,7 +196,7 @@ Tu dois obtenir ceci : il erre sans traverser un seul mur, et il ne te poursuit 
 </details>
 
 ## Étape 3 : Poursuivre seulement quand tu es proche
-<!-- ws: {type: exercise, id: a2-mode-follow} -->
+<!-- ws: {type: exercise, id: a2-mode-follow, points: 400} -->
 
 Tu tiens les trois comportements, et les deux branches de `'scared'`. Il te manque les deux qui relient `'patrol'` et `'follow'` : proche fait passer en `'follow'`, loin ramène en `'patrol'`.
 
@@ -258,7 +258,7 @@ Rouge mais immobile ? Ton arbre de la partie 1 est resté **dans** le bloc `patr
 </details>
 
 ## Étape 4 : Le fantôme complet
-<!-- ws: {type: exercise, id: a2-fantome-complet} -->
+<!-- ws: {type: exercise, id: a2-fantome-complet, points: 300} -->
 
 Tes trois modes existent séparément. Reste à voir s'ils s'enchaînent proprement.
 
@@ -288,7 +288,7 @@ Un mode ne se déclenche jamais ? Reviens à l'étape qui l'a introduit et refai
 </details>
 
 ## Bonus : Tenir sa direction
-<!-- ws: {type: exercise, id: a2-tenir-direction, optional: true} -->
+<!-- ws: {type: exercise, id: a2-tenir-direction, points: 250, optional: true} -->
 
 En mode `patrol`, ton fantôme erre, mais il ne va nulle part : à chaque case il retire aléatoirement une direction, et une fois sur quatre c'est un demi-tour.
 
@@ -331,7 +331,7 @@ Tu dois obtenir ceci :
 *C'est réussi si :* il file en ligne droite sur plusieurs cases avant de tourner.
 
 ## Bonus : Ton fantôme à toi
-<!-- ws: {type: exercise, id: a2-ton-fantome, optional: true, requires: a2-patrouiller} -->
+<!-- ws: {type: exercise, id: a2-ton-fantome, points: 200, optional: true, requires: a2-patrouiller} -->
 
 *Tu es arrivé au bout, les trois modes s'enchaînent. Ce qui suit n'est plus un exercice : c'est ta récompense, et c'est la partie que personne ne fait pareil.*
 
@@ -368,7 +368,7 @@ Ton fantôme ne ressemble pas à ta description ? Change **un** réglage à la f
 </details>
 
 ## Défis bonus - Partie 2
-<!-- ws: {type: exercise, id: a2-bonus, optional: true} -->
+<!-- ws: {type: exercise, id: a2-bonus, points: 150, optional: true} -->
 
 Trois variantes de ta machine à états.
 

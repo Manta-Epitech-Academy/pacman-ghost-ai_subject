@@ -20,7 +20,7 @@ Le texte est du Markdown normal, lisible tel quel sur GitHub. Tout ce dont la pl
 
 - **Mode** : `instructor_led`
 - **Validation** : `checkpoint`
-- **Points par étape** : `25` par défaut
+- **Points par étape** : fixés étape par étape, 10 points par minute estimée (`25` par défaut si une étape n'en précise pas)
 - **Runtime** : Pac-Man (`pacman` épinglé en `00ffe3f`) — [pacman-ghost-ai_runtime](https://github.com/kevin-cazal/pacman-ghost-ai_runtime)
 
 ## Mettre cet atelier en ligne

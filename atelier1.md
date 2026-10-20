@@ -10,7 +10,7 @@ Un arbre de décision, c'est une suite de règles « si... alors... sinon... » 
 ![Le fantôme de la fin de cette partie : il coupe au plus court pour te rejoindre.](img/jeu-demo.gif)
 
 ## Étape 0 : Découvrir le jeu et l'éditeur
-<!-- ws: {type: exercise, id: a1-demarrer, validation: quiz} -->
+<!-- ws: {type: exercise, id: a1-demarrer, points: 100, validation: quiz} -->
 
 Le jeu fonctionne déjà en partie : Pac-Man se déplace et mange les pac-gommes. Le fantôme, lui, ne bouge pas. C'est la seule chose qui manque.
 
@@ -63,7 +63,7 @@ Les flèches ne font rien ? Le contour jaune entoure sûrement le panneau **Code
 - C. Dans un fichier .lua sur mon ordinateur
 
 ## Étape 1 : Faire bouger le fantôme
-<!-- ws: {type: exercise, id: a1-bouger, validation: quiz} -->
+<!-- ws: {type: exercise, id: a1-bouger, points: 100, validation: quiz} -->
 
 Le fantôme ne bouge pas, et c'est normal : `ghost` renvoie `nil`, ce qui veut dire « je ne fais rien ». Remplace ce `nil` par une direction, et il partira.
 
@@ -126,7 +126,7 @@ Il ne bouge pas du tout ? Trois causes, dans cet ordre : tu n'as pas recliqué s
 - C. Parce que `'left'` n'est pas une vraie direction
 
 ## Étape 2 : L'empêcher de traverser les murs
-<!-- ws: {type: exercise, id: a1-can-go-left, validation: quiz} -->
+<!-- ws: {type: exercise, id: a1-can-go-left, points: 150, validation: quiz} -->
 
 Ton fantôme part à gauche quoi qu'il arrive. Pour qu'il s'arrête au mur, il faut d'abord qu'il regarde la case à sa gauche : s'il n'y a pas de mur, il peut y aller.
 
@@ -231,7 +231,7 @@ est écrit pareil sur les deux lignes (une majuscule change tout).
 - D. Le fantôme traversera les murs
 
 ## Étape 3 : Savoir de quel côté est Pac-Man
-<!-- ws: {type: exercise, id: a1-distance-x, validation: quiz} -->
+<!-- ws: {type: exercise, id: a1-distance-x, points: 150, validation: quiz} -->
 
 Ton fantôme fonce à gauche même quand tu es à droite : il lui manque de savoir de quel côté tu es. Une soustraction suffit.
 
@@ -328,7 +328,7 @@ complet ci-dessus, ligne par ligne : le `-` de `pacman.X - me.X`, et le `then` e
 - D. Simplifier le code en donnant un nom (par exemple `canGoLeft`) à une valeur (`true` ou `false`)
 
 ## Étape 4 : La droite
-<!-- ws: {type: exercise, id: a1-directions-completes} -->
+<!-- ws: {type: exercise, id: a1-directions-completes, points: 150} -->
 
 Pour aller à droite, c'est comme pour aller à gauche... mais dans l'autre sens.
 
@@ -403,7 +403,7 @@ avec cette valeur, morceau par morceau : est-ce qu'elle est vraie ?
 </details>
 
 ## Étape 5 : L'axe vertical
-<!-- ws: {type: exercise, id: a1-haut-bas} -->
+<!-- ws: {type: exercise, id: a1-haut-bas, points: 150} -->
 
 ![Une case voisine, c'est la case du fantôme avec une coordonnée décalée de 1.](img/directions-v2.png)
 
@@ -452,7 +452,7 @@ un `nil` ?
 > 💡 Tu trouves que tu écris quatre fois le même bloc de code et que c'est redondant ? C'est normal, il est possible de synthétiser tout ça à l'aide d'une fonction (cf. **défi #3** à la fin de cet atelier).
 
 ## Étape 6 : L'ordre des règles compte
-<!-- ws: {type: exercise, id: a1-priorite-regles} -->
+<!-- ws: {type: exercise, id: a1-priorite-regles, points: 150} -->
 
 Quand Pac-Man est en diagonale, plusieurs de tes règles sont vraies en même temps. Le **premier** `if` **avec une condition valide** l'emporte, et les `if` suivants ne sont même pas lus.
 
@@ -479,7 +479,7 @@ Pac-Man dans leurs coins, jeu arrêté, et garde tes deux règles verticales jus
 horizontales.
 
 ## Étape 7 : Couper en diagonale
-<!-- ws: {type: exercise, id: a1-optimiser-recherche} -->
+<!-- ws: {type: exercise, id: a1-optimiser-recherche, points: 250} -->
 
 Jusqu'ici tes règles sont testées dans un ordre fixé d'avance. Teste d'abord l'axe où l'écart est **le plus grand**.
 
@@ -603,7 +603,7 @@ Tu dois obtenir ceci (Pac-Man en bas à gauche, le fantôme en haut à droite, p
 </details>
 
 ## Étape 8 : Jouer une partie complète
-<!-- ws: {type: exercise, id: a1-partie-complete, optional: true} -->
+<!-- ws: {type: exercise, id: a1-partie-complete, points: 100, optional: true} -->
 
 - **Victoire** : **toutes** les pac-gommes, y compris celle cachée sous le fantôme au départ.
 - **Mort** : tu le touches, « **Perdu !** », et ça redémarre après 3 s.
@@ -625,7 +625,7 @@ Un bug revient ? Fais afficher tes variables avec `print` : le texte sort dans l
 </details>
 
 ## Défis bonus - Partie 1
-<!-- ws: {type: exercise, id: a1-bonus, optional: true, requires: a1-distance-x} -->
+<!-- ws: {type: exercise, id: a1-bonus, points: 150, optional: true, requires: a1-distance-x} -->
 
 Trois pistes, sans correction. Les deux premières n'utilisent que ce que tu as déjà ; la dernière ajoute une notion. Aucune ne bloque la suite.
 
